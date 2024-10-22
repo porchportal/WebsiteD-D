@@ -1,0 +1,211 @@
+<!-- PageElement/admin.html -->
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #66ccff;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(102, 204, 255, 0.3);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .page-card {
+            background-color: #2d2d2d;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            min-height: 200px;
+        }
+
+        .page-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(102, 204, 255, 0.2);
+            background-color: #363636;
+        }
+
+        .page-title {
+            color: #66ccff;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #404040;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-badge {
+            font-size: 0.7em;
+            padding: 4px 8px;
+            background-color: #404040;
+            border-radius: 12px;
+            color: #66ccff;
+        }
+
+        .page-description {
+            color: #cccccc;
+            font-size: 0.9em;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .quest-summary {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #363636;
+            border-radius: 8px;
+            font-size: 0.85em;
+        }
+
+        .page-link {
+            color: #66ccff;
+            text-decoration: none;
+            margin-top: 15px;
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #404040;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .page-link:hover {
+            background-color: #66ccff;
+            color: #1a1a1a;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #66ccff;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #99ddff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <h1>Admin Dashboard</h1>
+
+        <div class="grid-container">
+            <!-- Main Page Card -->
+            <div class="page-card">
+                <div class="page-title">หน้าหลัก</div>
+                <div class="page-description">
+                    แสดงประเภทของเนื้อหาทั้งหมด รวมถึงกองกลาง กองลับ และกอง DM
+                </div>
+                <a href="../index.html" class="page-link">ดูหน้านี้</a>
+            </div>
+
+            <!-- Login Page Card -->
+            <div class="page-card">
+                <div class="page-title">หน้าเข้าสู่ระบบ</div>
+                <div class="page-description">
+                    หน้าล็อกอินสำหรับผู้ใช้ประเภทต่างๆ
+                </div>
+                <a href="../login.html" class="page-link">ดูหน้านี้</a>
+            </div>
+
+            <!-- Viewer Page Card -->
+            <div class="page-card">
+                <div class="page-title">หน้า Viewer</div>
+                <div class="page-description">
+                    แสดงข้อมูลกองกลางสำหรับผู้ชมทั่วไป
+                </div>
+                <a href="viewer.html" class="page-link">ดูหน้านี้</a>
+            </div>
+
+            <!-- Gem Page Card -->
+            <div class="page-card">
+                <div class="page-title">
+                    หน้า Gem
+                    <span class="status-badge">Active Quest</span>
+                </div>
+                <div class="page-description">
+                    หน้าสำหรับ Gem แสดงข้อมูลภารกิจและการผจญภัย
+                </div>
+                <div class="quest-summary">
+                    Current Quest: Secrets in the Sewer
+                    <br>
+                    • Location: Aysgarth
+                    <br>
+                    • Status: Chasing drow sorcerer
+                    <br>
+                    • Party: Luran, Ezekiel, Angie, Hador, Quill
+                </div>
+                <a href="gem.html" class="page-link">ดูหน้านี้</a>
+            </div>
+
+            <!-- Ending Page Card -->
+            <div class="page-card">
+                <div class="page-title">หน้าจบ</div>
+                <div class="page-description">
+                    หน้าสุดท้ายแสดงข้อความขอบคุณและการนำทาง
+                </div>
+                <a href="ending.html" class="page-link">ดูหน้านี้</a>
+            </div>
+
+            <!-- 404 Page Card -->
+            <div class="page-card">
+                <div class="page-title">หน้า 404</div>
+                <div class="page-description">
+                    หน้าแสดงข้อผิดพลาดเมื่อไม่พบหน้าที่ต้องการ
+                </div>
+                <a href="404.html" class="page-link">ดูหน้านี้</a>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="../index.html" class="nav-btn">กลับหน้าหลัก</a>
+            <a href="ending.html" class="nav-btn">ไปยังหน้าจบ</a>
+        </div>
+    </div>
+</body>
+
+</html>

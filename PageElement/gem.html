@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Page - Quest Information</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            background-color: #363636;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #66ccff;
+        }
+
+        h1 {
+            color: #66ccff;
+            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(102, 204, 255, 0.3);
+        }
+
+        .quest-title {
+            color: #66ccff;
+            font-size: 1.8em;
+            margin: 30px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #404040;
+        }
+
+        .quest-content {
+            background-color: #363636;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .quest-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .quest-item {
+            position: relative;
+            padding: 15px 0 15px 25px;
+            border-bottom: 1px solid #404040;
+            line-height: 1.6;
+        }
+
+        .quest-item:last-child {
+            border-bottom: none;
+        }
+
+        .quest-item::before {
+            content: "•";
+            color: #66ccff;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #404040;
+        }
+
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #66ccff;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #99ddff;
+            transform: translateY(-2px);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #404040;
+            color: #66ccff;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-container">
+        <div class="header">
+            <h1>กองกลาง</h1>
+        </div>
+
+        <div class="quest-section">
+            <div class="quest-title">
+                Secrets in the Sewer
+                <span class="status-badge">Active Quest</span>
+            </div>
+
+            <div class="quest-content">
+                <ul class="quest-list">
+                    <li class="quest-item">
+                        Talk to the townspeople again; buy a map of Aysgarth
+                    </li>
+                    <li class="quest-item">
+                        Chasing drow sorcerer throughout Emelle before (lose his track on their way; but he got marked
+                        by Evanara), following him out to the haunted port.
+                    </li>
+                    <li class="quest-item">
+                        Argued for 1 hour straight about how they should travel to get there within one hour without
+                        leaving anyone behind. Two on one smaller horse. Three (2-and-half, considering Hador being a
+                        gnome) on a larger horse. And Gem's character, Luran, shapeshifts into a giant hawk and carry
+                        Pann's character, Ezekiel to the port.
+                    </li>
+                    <li class="quest-item">
+                        Reaching the port and fighting the sorcerer again. Gem refused to return into his human form and
+                        tank for the team (he's the party's tanker). The lineup ended up pushing the weak-blooded mabes
+                        (Angie and Hador) to the front and almost got killed on the spot.
+                    </li>
+                    <li class="quest-item">
+                        Revealing portion of each backstories (Quill being hunted a bloodied drow)
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="../index.html" class="nav-btn">กลับหน้าหลัก</a>
+            <a href="ending.html" class="nav-btn">ไปยังหน้าจบ</a>
+        </div>
+    </div>
+</body>
+
+</html>

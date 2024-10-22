@@ -1,0 +1,96 @@
+<!-- PageElement/ending.html -->
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ending Page</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ending-container {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(45, 45, 45, 0.9);
+            border-radius: 15px;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #66ccff;
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #66ccff;
+        }
+
+        .thank-you {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .nav-link {
+            padding: 12px 24px;
+            background-color: #66ccff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-link:hover {
+            background-color: #99ddff;
+            transform: scale(1.05);
+        }
+
+        .credits {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ending-container">
+        <h1>The End</h1>
+
+        <div class="thank-you">
+            ขอบคุณที่ติดตามเนื้อเรื่องมาจนจบ<br>
+            หวังว่าคุณจะได้พบกับความลับที่น่าสนใจ
+        </div>
+
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">กลับไปหน้าหลัก</a>
+            <a href="../login.html" class="nav-link">กลับไปหน้าเข้าสู่ระบบ</a>
+            <a href="viewer.html" class="nav-link">กลับไปหน้าก่อนหน้า</a>
+        </div>
+
+        <div class="credits">
+            © 2024 D&D Campaign Manager
+        </div>
+    </div>
+</body>
+
+</html>
